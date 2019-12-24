@@ -1,0 +1,35 @@
+contract tripNumber =
+
+  record trip =
+    { creatorAddress : address,
+      url            : string,
+      name           : string,
+      numberCount      : int }
+
+  record state =
+    { trips      : map(int, trip),
+      tripsLength : int }
+
+  entrypoint init() =
+    { trips = {},
+      tripsLength = 0 }
+
+  entrypoint gettrip(index : int) : trip =
+  	switch(Map.lookup(index, state.trips))
+	    None    => abort("There is no trip with this destination registered.")
+	    Some(x) => x
+
+  stateful entrypoint registertrip(url' : string, name' : string) =
+    let trip = { creatorAddress = Call.caller, url = url', name = name', numberCount = 0}
+    let index = gettripsLength() + 1
+    put(state{ trips[index] = trip, tripsLength = index })
+
+  entrypoint gettripsLength() : int =
+    state.tripsLength
+
+  stateful entrypoint numbertrip(index : int) =
+    let trip = gettrip(index)
+    Chain.spend(trip.creatorAddress, Call.value)
+    let updatednumberCount = trip.numberCount + Call.value
+    let updatedtrips = state.trips{ [index].numberCount = updatednumberCount }
+    put(state{ trips = updatedtrips })
