@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="checkout.css">
+
+    <title>Checkout</title>
+  </head>
+	<body>
+		<div class="row">
+			<div class="col-md-75 col-sm-12 div-center">
+			  <div class="container">
+				<form action="/action_page.php">
+
+					<div class="col-25">
+						<div class="container">
+						  <h4>Tours
+							<span class="price" style="color:black">
+							  <i class="fa fa-shopping-cart"></i>
+							  <b>5</b>
+							</span>
+						  </h4>
+						  <p><a href="#">zanzibar</a> <span class="price">3500.00 æ</span></p>
+						  <p><a href="#">Dar es salaam</a> <span class="price">3000.00 æ</span></p>
+						  <p><a href="#">mombasa</a> <span class="price">6000.00 æ</span></p>
+						  <p><a href="#">Adis Ababa</a> <span class="price">4500.50 æ</span></p>
+						  <p><a href="#">Indonesia</a> <span class="price">8700.00 æ</span></p>
+						  <hr>
+						  <p>Total <span class="price" style="color:black"><b>18000.00 æ</b></span></p>
+						</div>
+					</div>
+		  
+				  <div class="row">
+					<div class="col-50">
+					  <h3>Billing Address</h3>
+					  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+					  <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+					  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+					  <input type="text" id="email" name="email" placeholder="john@example.com">
+					  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+					  <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+					  <label for="city"><i class="fa fa-institution"></i> City</label>
+					  <input type="text" id="city" name="city" placeholder="New York">
+		  
+					  <div class="row">
+						<div class="col-50">
+						  <label for="state">State</label>
+						  <input type="text" id="state" name="state" placeholder="NY">
+						</div>
+						<div class="col-50">
+						  <label for="zip">Zip</label>
+						  <input type="text" id="zip" name="zip" placeholder="10001">
+						</div>
+					  </div>
+					</div>
+		  
+					<div class="col-50">
+					  <h3>Payment Address</h3>
+					  <label for="fname">ak_2FbNgxusNhjy2a3WybXuokojSphFLiYnooo2NdQ6iWJHGkapaM</label>
+					  <div class="icon-container">
+						<i class="fa fa-cc-visa" style="color:navy;"></i>
+						<i class="fa fa-cc-amex" style="color:blue;"></i>
+						<i class="fa fa-cc-mastercard" style="color:red;"></i>
+						<i class="fa fa-cc-discover" style="color:orange;"></i>
+					  </div>
+					  <label for="cname">Name of Traveller</label>
+					  <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+					  <label for="ccnum">Phone Number</label>
+					  <input type="text" id="phonum" name="phonenumber" placeholder="+256 755-717908">
+					  <label for="travelmonth">Travel Month</label>
+					  <input type="text" id="travelmonth" name="travelmonth" placeholder="September">
+		  
+					  <div class="row">
+						<div class="col-50">
+						  <label for="travelyear">Travel Year</label>
+						  <input type="text" id="travelyear" name="travelyear" placeholder="2020">
+						</div>
+						<div class="col-50">
+						  <label for="day">Travel Date</label>
+						  <input type="text" id="date" name="date" placeholder="01-august-2020">
+						</div>
+					  </div>
+					</div>
+		  
+				  </div>
+				  <label>
+					<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+				  </label>
+
+				  <a href="https://base.aepps.com/" class="btn">Continue to checkout</a>
+				</form>
+			  </div>
+			</div>
+		  
+			
+		</div>
+	</body>
+</html>
