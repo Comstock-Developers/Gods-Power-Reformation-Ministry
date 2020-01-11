@@ -15,6 +15,36 @@
     <title>Asana Travels</title>
   </head>
   <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+                
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="zanzibar.html">zanzibar</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="indonesia.html">Indonesia</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="dar.html">Dar es salaam</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mombasa.html">Mombasa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="addis.html">Addis Ababa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checkout.html">checkout</a>
+          </li>
+      </ul>
+  
+    </nav>
     <div class="container">
       <div class="row">
         <div class="col-md-25 col-sm-12 text-center div-center">
@@ -24,13 +54,13 @@
             
             <h1>Trip Advisor</h1>
           </div>
-
+<!--  
           <div id="message">
             <div id="loader" class="alert alert-secondary">
               <img src="img/loading.gif">
             </div>
           </div>
-
+ -->
           <div class="container"></div>
             <div class="row">
               <div class="column text-center div-center">
@@ -42,15 +72,7 @@
                           <div class="column">
                             <img src="img/zanzibar1.jpeg" alt="Card image cap" style="width: 100%">
                           </div>
-                          <div class="column">
-                            <img src="img/zanzibar2.jpeg" alt="Card image cap" style="width: 100%">
-                          </div>
-                          <div class="column">  
-                            <img src="img/zanzibar3.jpeg" alt="Card image cap" style="width: 100%">
-                          </div>
-                          <div class="column">  
-                            <img src="img/zanzibar4.jpeg" alt="Card image cap" style="width: 100%">
-                          </div>
+
                         </div>
                         <div class="card-body">
                           <h6 class="card-subtitle mb-2 text-muted">3500.00 æ</h6>
@@ -151,6 +173,21 @@
         </div>
       </div>
     </div>
+    <section class="container content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+      </div>
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+      </div>
+      <a href="checkout.html" class="btn btn-primary btn-purchase addBtn btn-block">PURCHASE</a>
+    </section>
 
 
     <!-- Optional JavaScript -->
@@ -161,5 +198,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
