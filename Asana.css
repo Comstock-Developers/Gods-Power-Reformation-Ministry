@@ -32,6 +32,9 @@ header {
 	font-family: var(--gugi)
 }
 
+.nav-link {
+  font-family: var(--arvo)
+}
 
 body{
   background-color:rgb(36, 88, 131);
