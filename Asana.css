@@ -1,3 +1,26 @@
+/* import font from google fonts*/
+@import url("https://fonts.googleapis.com/css?family=Anton|Arvo|Gugi|Lato|Roboto|Sofia&display=swap");
+
+:root {
+	--light-gray: #2b3032a1;
+	--primary-color:#45ccb4;
+	--border: #2b303218;
+	--text-color: #ff686b;
+	--roboto: "Roboto", sans-serif;
+	--gugi: "Gugi",cursive;
+	--sofia:"Sofia",cursive;
+}
+
+
+.primary-color {
+	color:var(--primary-color);
+}
+
+.content {
+	font: bold;
+	font-style: Anton;
+}
+
 body{
   background-color:rgb(36, 88, 131);
 
@@ -13,9 +36,7 @@ body{
 }
 
 img{
-  width: 200px;
-  height: 200px;
-  
+ 
 }
 
 .about-destination-image {
