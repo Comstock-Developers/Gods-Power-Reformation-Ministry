@@ -21,6 +21,18 @@
 	font-style: Anton;
 }
 
+/*header*/
+
+header {
+	background-color: var(--primary-color);
+	font-family: var(--roboto);
+}
+
+.site-title {
+	font-family: var(--gugi)
+}
+
+
 body{
   background-color:rgb(36, 88, 131);
 
