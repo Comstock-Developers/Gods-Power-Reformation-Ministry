@@ -36,8 +36,9 @@ header {
   font-family: var(--arvo)
 }
 
+/* Body */
 body{
-  background-color:rgb(36, 88, 131);
+  background-color:rgb(56, 135, 199);
 
 }
 
@@ -158,6 +159,13 @@ height: 100vh
 
 .band-name {
 	font: Anton;
+}
+
+/* carousel images*/
+
+.img-carousel {
+  width: 1000px;
+  height: 800px;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
