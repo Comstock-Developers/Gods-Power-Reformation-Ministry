@@ -10,7 +10,7 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="checkout.css">
+	<link rel="stylesheet" type="text/css" href="css/checkout.css">
 	
 	<!-- Font Awesome CDN -->
 	<script src="https://kit.fontawesome.com/9e333798b7.js" crossorigin="anonymous"></script>
@@ -60,43 +60,43 @@
 					<section class="container content-section">
 						<h2 class="section-header">Destination</h2>
 						<div class="shop-items">
-							<div class="shop-item">
+							<div id="add_zanzibar" class="shop-item">
 								<span class="shop-item-title">Zanzibar</span>
 								<img class="shop-item-image" src="img/zanzibar-beach-dork.jpg" width ="400px" height="200px" >
 								<div class="shop-item-details">
-									<span class="shop-item-price">$12.99</span>
+									<span class="shop-item-price">æ 8700.00</span>
 									<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
 								</div>
 							</div>
-							<div class="shop-item">
+							<div id="add_indonesia" class="shop-item">
 								<span class="shop-item-title">Indonesia</span>
 								<img class="shop-item-image" src="img/indonesia-pixabay-bali.jpg" width ="400px" height="200px">
 								<div class="shop-item-details">
-									<span class="shop-item-price">$14.99</span>
+									<span class="shop-item-price">æ 5950.50</span>
 									<button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
 								</div>
 							</div>
-							<div class="shop-item">
+							<div id="tanzania" class="shop-item">
 								<span class="shop-item-title">Tanzania</span>
 								<img class="shop-item-image" src="img/dar-mahale-mountains.jpg" width ="400px" height="200px">
 								<div class="shop-item-details">
-									<span class="shop-item-price">$9.99</span>
+									<span class="shop-item-price">æ 7200.00</span>
 									<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
 								</div>
 							</div>
-							<div class="shop-item">
+							<div id ="add_kenya" class="shop-item">
 								<span class="shop-item-title">Kenya</span>
 								<img class="shop-item-image" src="img/mombasa1.jpg" width ="400px" height="200px">
 								<div class="shop-item-details">
-									<span class="shop-item-price">$19.99</span>
+									<span class="shop-item-price">æ 4500.00</span>
 									<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
 								</div>
 							</div>
-							<div class="shop-item">
+							<div id="add_ethiopia" class="shop-item">
 								<span class="shop-item-title">Ethiopia</span>
 								<img class="shop-item-image" src="img/ethiopia3.jpg" width ="400px" height="200px">
 								<div class="shop-item-details">
-									<span class="shop-item-price">$19.99</span>
+									<span class="shop-item-price">æ 5850.00</span>
 									<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
 								</div>
 							</div>
@@ -111,43 +111,18 @@
 							<span class="cart-quantity cart-header cart-column">QUANTITY</span>
 						</div>
 						<div class="cart-items">
-							<div class="cart-row">
-								<div class="cart-item cart-column">
-									<img class="cart-item-image" src="Images/Shirt.png" alt=""
-									height="100" width="100">
-									<span class="cart-item-title">T-Shirt</span>
-								</div>
-								<span class="cart-price cart-column">$19.99</span>
-								<div class="cart-quantity cart-column">
-									<input class="cart-quantity-input" type="number" value="1">
-									<button class="btn btn-danger"
-									type="button">REMOVE</button>
-								</div>
-							</div>
-							<div class="cart-row">
-								<div class="cart-item cart-column">
-									<img class="cart-item-image" src="Images/Album 3.png" alt=""
-									height="100" width="100">
-									<span class="cart-item-title">Album 3</span>
-								</div>
-								<span class="cart-price cart-column">$9.99</span>
-								<div class="cart-quantity cart-column">
-									<input class="cart-quantity-input" type="number" value="2">
-									<button class="btn btn-danger"
-									type="button">REMOVE</button>
-								</div>
-							</div>
+							
 						</div>
 						<div class="cart-total">
 							<strong class="cart-total-title">Total</strong>
-							<span class="cart-total-price">$0</span>
+							<span class="cart-total-price">æ 0</span>
 						</div>
 						<button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
 					</section>
 		  
 				  <div class="row">
 					<div class="col-50">
-					  <h3>Billing Address</h3>
+					  <h3 class="section-header">Billing Address</h3>
 					  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
 					  <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
 					  <label for="email"><i class="fa fa-envelope"></i> Email</label>
@@ -170,7 +145,7 @@
 					</div>
 		  
 					<div class="col-50">
-					  <h3>Payment Address</h3>
+					  <h3 class="section-header">Payment Address</h3>
 					  <label for="fname">ak_2FbNgxusNhjy2a3WybXuokojSphFLiYnooo2NdQ6iWJHGkapaM</label>
 					  <div class="icon-container">
 						<i class="fa fa-cc-visa" style="color:navy;"></i>
@@ -215,5 +190,6 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script src="./checkout.js"></script>
+		<script src="js/checkout.js"></script>
+		<script src="js/index.js"></script>
 </html>

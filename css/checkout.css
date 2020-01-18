@@ -1,0 +1,211 @@
+/* import font from google fonts*/
+@import url("https://fonts.googleapis.com/css?family=Anton|Arvo|Gugi|Lato|Roboto|Sofia&display=swap");
+
+:root {
+	--light-gray: #2b3032a1;
+	--primary-color:#45ccb4;
+	--border: #2b303218;
+	--text-color: #ff686b;
+	--roboto: "Roboto", sans-serif;
+	--gugi: "Gugi",cursive;
+	--sofia:"Sofia",cursive;
+}
+
+
+.primary-color {
+	color:var(--primary-color);
+}
+
+.content {
+	font: bold;
+	font-style: Anton;
+}
+
+/*header*/
+
+header {
+	background-color: var(--primary-color);
+	font-family: var(--roboto);
+}
+
+.site-title {
+  font-family: var(--gugi);
+  text-align: center;
+}
+
+.nav-link {
+  font-family: var(--arvo)
+}
+
+body{
+  
+  background-image: url(img/backgroung.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.section-header {
+  font-family: var(--gugi);
+  text-align: center
+}
+
+.shop-item-title {
+  font-family: var(--gugi)
+}
+
+.cart-header {
+  font-family: var(--lato);
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  opacity: 0.9;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+img.shop-item-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 40%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.btn-danger {
+  background-color: rgb(231, 34, 34);
+  color: white;
+
+  }
+
+.btn-danger:hover {
+  background-color: #eb5e5e;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.shop-item-price {
+  flex-grow: 1;
+  color: #333;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
