@@ -39,7 +39,7 @@ header {
 
 body{
   
-  background-image: url(img/backgroung.jpg);
+  background-color: rgb(0, 153, 255);
   background-size: cover;
   background-position: center;
 }
