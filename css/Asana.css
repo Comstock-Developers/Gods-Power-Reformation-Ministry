@@ -56,9 +56,13 @@ body{
   color: white;
 }
 
-img{
- 
+div {
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-bottom: 30px;
+  padding-left: 0px;
 }
+
 
 .about-destination-image {
   width: 400px;
@@ -135,7 +139,7 @@ height: 100vh
   width:100%;
   position:absolute;
   }
-  
+
 /* Slider One */
 
 
