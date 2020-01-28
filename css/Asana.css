@@ -46,6 +46,11 @@ body{
   margin: 0 auto;
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 #title-div {
   margin: 1em;
   color: white;
@@ -116,6 +121,21 @@ width: 370px;
 height: 100vh
 }
 
+/* satellite map */
+.map-container-3{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  }
+  .map-container-3 iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  }
+  
 /* Slider One */
 
 
