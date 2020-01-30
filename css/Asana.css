@@ -34,6 +34,12 @@ header {
 
 .nav-link {
   font-family: var(--arvo)
+  
+}
+
+.nav-item {
+  font-size: larger;
+  font-weight: bolder;
 }
 
 /* Body */
@@ -190,6 +196,7 @@ height: 100vh
 .img-carousel {
   width: 1000px;
   height: 800px;
+  border-radius: 5%;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
