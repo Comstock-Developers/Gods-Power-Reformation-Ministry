@@ -211,9 +211,11 @@ html {
   font-size: 16px; }
 
 body {
-  color: #89837c;
+  color: #3f3b37;
   font-family: Courier New, sans-serif;
   font-weight: 300;
+  background-color: rgb(238, 224, 180); 
+  background-repeat:repeat;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
