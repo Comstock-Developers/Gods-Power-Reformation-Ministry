@@ -195,10 +195,13 @@
 									<div class="fb-page" data-href="https://www.facebook.com/Gods-power-reformation-ministry-Namasuba-Uganda-117813266295709/?ref=pages_you_manage" data-tabs="timeline" data-width="30000" data-height="2000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Gods-power-reformation-ministry-Namasuba-Uganda-117813266295709/?ref=pages_you_manage" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Gods-power-reformation-ministry-Namasuba-Uganda-117813266295709/?ref=pages_you_manage">God’s power reformation ministry Namasuba Uganda</a></blockquote></div>
 						
 								</ul>
-
-								<div class="text-center">
-									<a href="events.html" class="button">See all events</a>
-								</div>
+								<div id="smart-button-container">
+									<div style="text-align: center;">
+									  <div id="paypal-button-container"></div>
+									</div>
+								  </div>
+								
+								
 							</div>
 							<div class="col-md-6">
 								<h2 class="section-title">Latest seremons</h2>
@@ -220,9 +223,56 @@
 									</div>
 								
 								</ul>
+								<div id="smart-button-container">
+									<div style="text-align: center;">
+									  <div id="paypal-button-container"></div>
+									</div>
+								  </div>
+								<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+								<script>
+								  function initPayPalButton() {
+									paypal.Buttons({
+									  style: {
+										shape: 'rect',
+										color: 'blue',
+										layout: 'vertical',
+										label: 'paypal',
+										
+									  },
+							  
+									  createOrder: function(data, actions) {
+										return actions.order.create({
+										  purchase_units: [{"description":"Donations","amount":{"currency_code":"USD","value":1}}]
+										});
+									  },
+							  
+									  onApprove: function(data, actions) {
+										return actions.order.capture().then(function(orderData) {
+										  
+										  // Full available details
+										  console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+							  
+										  // Show a success message within this page, e.g.
+										  const element = document.getElementById('paypal-button-container');
+										  element.innerHTML = '';
+										  element.innerHTML = '<h3>Thank you for your payment!</h3>';
+							  
+										  // Or go to another URL:  actions.redirect('thank_you.html');
+										  
+										});
+									  },
+							  
+									  onError: function(err) {
+										console.log(err);
+									  }
+									}).render('#paypal-button-container');
+								  }
+								  initPayPalButton();
+								</script>
 
 								
 							</div>
+							
 						</div> <!-- .row -->
 					</div> <!-- .container -->
 				</div> <!-- section -->
@@ -284,11 +334,7 @@
 								</script>
 							</div>
 						</div>
-						<div class="col-md-4">
-							<div class="widget">
-								
-							</div>
-						</div>
+						
 					</div> <!-- .row -->
 
 					<p class="colophon">Copyright 2022 Gods Power Reformation Ministry. All right reserved</p>
